@@ -1,0 +1,27 @@
+.pagination .page-link {
+  color: #f8b6d6; /* Rosado pastel */
+  background-color: #ffe6f2; /* Fondo rosado muy claro */
+  border: 1px solid #f8b6d6; /* Borde rosado pastel */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 50%; /* Forma redonda */
+  width: 40px; /* Ancho fijo para el círculo */
+  height: 40px; /* Alto fijo para el círculo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Elimina el relleno para centrar el contenido */
+}
+
+.pagination .page-link:hover {
+  background-color: #f8b6d6; /* Fondo rosado pastel en hover */
+  color: white; /* Texto blanco en hover */
+}
+
+.page-item {
+  cursor: pointer;
+  margin-right: 3px;
+}
+
+.page-link {
+  cursor: pointer;
+}

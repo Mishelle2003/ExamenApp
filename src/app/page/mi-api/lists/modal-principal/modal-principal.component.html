@@ -1,0 +1,47 @@
+<div class="modal fade" #modalElement tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">{{ isEditing ? 'Editar Carro' : 'Agregar Nuevo Carro' }}</h5>
+                <button type="button" class="btn-close" aria-label="Close" (click)="closeModal()"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="marca" class="form-label">Marca</label>
+                        <input type="text" id="marca" class="form-control" [(ngModel)]="carro.marca" name="marca" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="modelo" class="form-label">Modelo</label>
+                        <input type="text" id="modelo" class="form-control" [(ngModel)]="carro.modelo" name="modelo" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="fecha" class="form-label">Fecha</label>
+                        <input type="number" id="fecha" class="form-control" [(ngModel)]="carro.fecha" name="fecha" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="precio" class="form-label">Precio</label>
+                        <input type="number" id="precio" class="form-control" [(ngModel)]="carro.precio"
+                            name="precio" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="color" class="form-label">Color</label>
+                        <input type="text" id="color" class="form-control" [(ngModel)]="carro.color" name="color" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="km" class="form-label">Kilometraje</label>
+                        <input type="number" id="km" class="form-control" [(ngModel)]="carro.km" name="km" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="closeModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="btn btn-primary" (click)="guardar()">
+                    {{ isEditing ? 'Guardar Cambios' : 'Agregar Carro' }}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

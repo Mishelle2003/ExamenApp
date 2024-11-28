@@ -1,0 +1,41 @@
+/* Estilos de la tarjeta */
+.drink-card {
+  border: 1px solid #f8b6d6; /* Borde rosado pastel */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(248, 182, 214, 0.2); /* Sombra con tono rosado */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffe6f2; /* Fondo rosado muy claro */
+  padding-top: 12px;
+}
+
+.drink-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(248, 182, 214, 0.4); /* Sombra más intensa en hover */
+}
+
+.card-title {
+  color: #f8b6d6; /* Título en rosado pastel */
+  font-weight: bold;
+}
+
+.card-text {
+  color: #8b4a69; /* Texto en rosado un poco más oscuro */
+}
+
+.btn-primary {
+  background-color: #f8b6d6; /* Botón en rosado pastel */
+  border-color: #f8b6d6;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #d98cb3; /* Rosado más oscuro en hover */
+  border-color: #c378a0;
+}
+
+/* Estilos para la imagen */
+.drink-image {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}

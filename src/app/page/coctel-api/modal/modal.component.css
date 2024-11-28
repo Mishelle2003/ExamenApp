@@ -1,0 +1,50 @@
+/* Modal */
+.modal-content {
+  border-radius: 10px;
+  background-color: #ffe6f2; /* Fondo rosado muy claro */
+  border: 1px solid #f8b6d6; /* Borde rosado pastel */
+  box-shadow: 0 4px 12px rgba(248, 182, 214, 0.2); /* Sombra con un toque rosado */
+}
+
+.modal-header {
+  background-color: #f8b6d6 !important; /* Fondo rosado pastel */
+  color: white; /* Texto blanco */
+  border-bottom: none;
+}
+
+.btn-close-white {
+  filter: brightness(0) invert(1); /* Asegura que el botón de cierre sea visible sobre el fondo rosado */
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.imagenprincipal {
+  border-color: #f8b6d6; /* Borde rosado pastel */
+  box-shadow: 0 2px 6px rgba(248, 182, 214, 0.3); /* Sombra rosada en la imagen */
+}
+
+.modal-body h5, .modal-body h6 {
+  color: #f8b6d6; /* Rosado pastel para los títulos de la sección */
+}
+
+.modal-body p, .modal-body li {
+  color: #8b4a69; /* Rosado más oscuro para el texto */
+}
+
+.modal-footer {
+  border-top: none;
+  background-color: #ffe6f2; /* Fondo rosado muy claro */
+}
+
+.btn-secondary {
+  background-color: #f8b6d6; /* Botón rosado pastel */
+  border-color: #f8b6d6;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #d98cb3; /* Rosado más oscuro en hover */
+  border-color: #c378a0;
+}

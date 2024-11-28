@@ -1,0 +1,43 @@
+<!-- Botón para agregar un nuevo elemento -->
+<div style="margin-bottom: 20px;">
+    <button class="btn-agregar" (click)="modal.open(null)">Agregar Nuevo Carro</button>
+</div>
+
+<!-- Tabla de carros -->
+<div *ngIf="carrosAll?.carros && carrosAll?.carros?.length; else noData">
+    <table class="tabla-personalizada">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Fecha</th>
+                <th>Precio</th>
+                <th>Color</th>
+                <th>Kilometraje</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let carro of carrosAll?.carros; index as i">
+                <td>{{ i + 1 }}</td>
+                <td>{{ carro.marca }}</td>
+                <td>{{ carro.modelo }}</td>
+                <td>{{ carro.fecha }}</td>
+                <td>{{ carro.precio | currency }}</td>
+                <td>{{ carro.color }}</td>
+                <td>{{ carro.km }} km</td>
+                <td>
+                    <button class="btn-editar" (click)="modal.open(carro)">Editar</button>
+                    <button class="btn-eliminar" (click)="eliminarCarro(carro._id!)">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<ng-template #noData>
+    <p class="mensaje-sin-datos">No hay carros para mostrar.</p>
+</ng-template>
+
+<app-modal-principal></app-modal-principal>

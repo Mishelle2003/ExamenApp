@@ -1,0 +1,107 @@
+/* Estilo general de la tabla */
+.tabla-personalizada {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado de la tabla */
+.tabla-personalizada thead {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.tabla-personalizada th {
+    padding: 14px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Cuerpo de la tabla */
+.tabla-personalizada td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+/* Última fila sin borde inferior */
+.tabla-personalizada tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Alternar colores de las filas */
+.tabla-personalizada tbody tr:nth-child(odd) {
+    background-color: #f9fafb;
+}
+
+.tabla-personalizada tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Hover en filas */
+.tabla-personalizada tbody tr:hover {
+    background-color: #eef2ff;
+    cursor: pointer;
+}
+
+/* Botones personalizados */
+.btn-editar {
+    padding: 8px 16px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.btn-editar:hover {
+    background-color: #059669;
+}
+
+.btn-eliminar {
+    padding: 8px 16px;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.btn-eliminar:hover {
+    background-color: #dc2626;
+}
+
+/* Mensaje sin datos */
+.mensaje-sin-datos {
+    text-align: center;
+    color: #6b7280;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f3f4f6;
+    border-radius: 6px;
+}
+
+/* Botón para agregar un nuevo elemento */
+.btn-agregar {
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-agregar:hover {
+    background-color: #1d4ed8;
+}

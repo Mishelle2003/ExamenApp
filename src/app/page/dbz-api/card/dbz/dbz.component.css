@@ -1,0 +1,73 @@
+.custom-card {
+  background-color: #f3e8ff; /* Fondo morado pastel muy claro */
+  border: 2px solid #c9a6ff; /* Borde morado pastel */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: visible; /* Permitir que la imagen sobresalga */
+  position: relative;
+  padding-top: 60px; /* Espacio extra para la imagen */
+  width: 300px;
+  display: flex;
+  margin-left: 0;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Asegura que la imagen esté encima de la tarjeta */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #9a77cf; /* Morado pastel para el título */
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #5d4b76; /* Morado oscuro para el texto */
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #c9a6ff; /* Morado pastel para el botón */
+  border-color: #c9a6ff;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #9a77cf; /* Morado más oscuro en hover */
+  border-color: #9a77cf;
+  box-shadow: 0 0 10px #9a77cf;
+}
+
+.circular-img {
+  width: auto;
+  border-radius: 10px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.custom-card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.custom-card .btn {
+  width: 70%;
+  margin-top: 15px;
+  background-color: #c9a6ff; /* Morado pastel */
+  border-color: #c9a6ff;
+}
+
+
+
