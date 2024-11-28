@@ -82,7 +82,7 @@ export class ModalPrincipalComponent {
       next: () => {
         console.log('Carro agregado exitosamente');
         this.closeModal();
-        window.location.reload(); // Puedes reemplazarlo con un método más eficiente para actualizar la lista
+        window.location.reload();
       },
       error: (error) => {
         console.error('Error al agregar el carro:', error);
